@@ -11,6 +11,7 @@
         "array": "node --watch ./js/kintamieji/array.js",
         "boolean": "node --watch ./js/kintamieji/boolean.js",
         "string": "node --watch ./js/kintamieji/string.js",
+        "mini": "node --watch ./js/javascriptmini.js",
         "number": "node --watch ./js/kintamieji/number.js",
         "dev": "node ./index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
