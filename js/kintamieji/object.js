@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 OBJECT - objektas
 key-value porų sąrašas
@@ -113,3 +115,106 @@ N) PAVADINIMAS (KAINA UZ VIENETA Eur) - KIEKIS
 C) SABLONAS:
 Prekiu krepselio verte yra TOTAL KAINA Eur.
 */
+
+console.clear();
+
+const pc = {
+    monitor: {
+        width: 1980,
+        height: 1080,
+    },
+    ram: 16,
+    hd: 100,
+    keyboard: 'en',
+    mouse: true,
+    power: false,
+};
+
+const param = 'monitor';
+console.log(pc[param]);
+
+console.log(pc.monitor.width);
+console.log(pc.monitor.height);
+console.log(pc['monitor'].width);
+console.log(pc['monitor'].height);
+console.log(pc['monitor']['width']);
+console.log(pc['monitor']['height']);
+console.log(pc.monitor['width']);
+console.log(pc.monitor['height']);
+
+console.log(pc[param]);
+console.log(pc[param].width);
+console.log(pc[param]['height']);
+
+console.clear();
+
+const crazy = {
+    title: 'Some crazy ... 👀',
+    description: 'Prepare yourself... 🛸',
+    'crazy marks': [10, 2, 8, 4, 6],
+    123: {
+        one: true,
+        two: true,
+        three: true,
+    },
+};
+
+console.log(crazy);
+console.log(crazy.title);
+console.log(crazy['description']);
+console.log(crazy['crazy marks']);
+console.log(crazy['123']);
+console.log(crazy[123]);
+
+/*
+string = supaprastingas array
+array = supaprastingas object
+*/
+console.log(crazy.title);
+console.log(crazy.title[0]);
+console.log(crazy.title[1]);
+console.log(crazy.title[2]);
+console.log(crazy.title.length);
+
+console.clear();
+
+const house = {
+    width: 16,
+    height: 3,
+    depth: 5,
+};
+
+const houseKeys = Object.keys(house);
+console.log(houseKeys);
+
+console.log(Object.keys({}));
+
+console.clear();
+
+// dinaminis reiksmiu priskyrimas
+
+const zoo = {
+    liutas: 2,
+};
+console.log(zoo.liutas);
+
+zoo.liutas += 3;
+console.log(zoo.liutas);
+
+zoo.dramblys = 1;
+console.log(zoo);
+
+zoo.dramblys += 2;
+console.log(zoo);
+
+zoo.lape = 4;
+console.log(zoo);
+
+const marks = [10, 2, 8, 4, 6];
+console.log(marks);
+console.log(marks[0]);
+
+marks[1] = 10;
+console.log(marks);
+console.log(marks[1]);
+
