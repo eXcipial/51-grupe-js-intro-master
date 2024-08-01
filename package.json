@@ -2,21 +2,24 @@
     "name": "51-grupe-js-intro",
     "version": "1.0.0",
     "description": "",
+    "type": "module",
     "main": "index.js",
     "scripts": {
+        "import": "node --watch ./js/function/import.js",
+        "for": "node --watch ./js/ciklas/for.js",
+        "function": "node --watch ./js/function/function.js",
+        "ternary": "node --watch ./js/if/ternary.js",
         "if": "node --watch ./js/if/if.js",
         "null": "node --watch ./js/kintamieji/null.js",
         "object": "node --watch ./js/kintamieji/object.js",
-        "objecthw": "node --watch ./js/kintamieji/objecthw.js",
         "array": "node --watch ./js/kintamieji/array.js",
         "boolean": "node --watch ./js/kintamieji/boolean.js",
         "string": "node --watch ./js/kintamieji/string.js",
-        "mini": "node --watch ./js/javascriptmini.js",
         "number": "node --watch ./js/kintamieji/number.js",
         "dev": "node ./index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "",
+    "author": "Rimantas (https://github.com/belauzas)",
     "license": "MIT"
 }
