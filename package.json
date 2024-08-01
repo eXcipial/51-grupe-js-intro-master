@@ -5,6 +5,7 @@
     "type": "module",
     "main": "index.js",
     "scripts": {
+        "mini": "node --watch ./js/javascriptmini.js",
         "import": "node --watch ./js/function/import.js",
         "for": "node --watch ./js/ciklas/for.js",
         "function": "node --watch ./js/function/function.js",
