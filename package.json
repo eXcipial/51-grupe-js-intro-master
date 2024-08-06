@@ -5,7 +5,9 @@
     "type": "module",
     "main": "index.js",
     "scripts": {
-        "mini": "node --watch ./js/javascriptmini.js",
+        "uzd:string": "node --watch ./uzd/string-reverse.js",
+        "uzd:suma": "node --watch ./uzd/suma-intervale.js",
+        "typeof": "node --watch ./js/if/typeof.js",
         "import": "node --watch ./js/function/import.js",
         "for": "node --watch ./js/ciklas/for.js",
         "function": "node --watch ./js/function/function.js",
